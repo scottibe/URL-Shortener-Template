@@ -10,6 +10,10 @@ gem 'dm-validations'
 gem 'dm-aggregates'
 gem 'dm-migrations'
 gem 'haml'
+gem 'pry-byebug'
+gem 'byebug'
+gem 'pry'
+gem 'require_all'
 
 group :test do
   gem 'rspec', :require => 'spec'

@@ -1,0 +1,3615 @@
+<!DOCTYPE html>
+<!--[if lte IE 7]><html id="html" class="deprecated"><![endif]-->
+<!--[if IE 8]><html id="html" class="deprecated"><![endif]-->
+<!--[if IE 9]><html id="html" class="deprecated"><![endif]-->
+<!--[if gt IE 9]><!--><html id="html" class="modern"><!--<![endif]-->
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>Coding Bootcamp. Learn to Code. | Flatiron School</title>
+  <meta name="description" content="A coding school offering Online and NYC bootcamps that empower you to become a web developer, iOS developer, and more. Free coding classes available.">
+  <link rel="stylesheet" href="/assets/css/global.min.css">
+
+  <link rel="canonical" href="http://flatironschool.com/">
+  <link rel='shortcut icon' type='image/x-icon' href='/assets/images/favicon.ico'/>
+
+    <script>
+    // Redirect lte IE 9
+    if (document.getElementsByTagName('html')[0].className.indexOf('deprecated') !== -1 && window.location.pathname != '/unsupported/') { window.location.href = '/unsupported/'; }
+    </script>
+
+  <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+  <script src="/assets/js/preload.min.js"></script>
+  <script>
+  window.imgixOptions = {
+    updateOnResizeDown: true,
+    highDPRAutoScaleQuality: false,
+    pixelStep: 20,
+    autoInsertCSSBestPractices: true,
+    lazyLoad: true,
+    lazyLoadOffsetVertical: 480,
+    lazyLoadColor: '#333',
+    onChangeParamOverride: function(h, w, params) {
+      return {
+        dpr: 1,
+        auto: 'format'
+      }
+    }
+  };
+
+  imgix.onready(function() {
+
+    // Initial Imgix check
+    imgix.fluid(imgixOptions);
+    
+    // Run backup check. This covers failures and also works as a backup for new DOM elements. Keep an eye on this.
+    setTimeout(function() {
+      imgix.fluid(imgixOptions);
+    }, 5000);
+  });
+  </script>
+
+  <script src="https://cdn.optimizely.com/js/7010092768.js"></script>
+
+  <!-- SVG4Everybody Polyfill -->
+  <script>
+    svg4everybody();
+  </script>
+
+  <!-- schema.org/School -->
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org/",
+      "@type": "School",
+
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "USA",
+        "addressLocality": "New York",
+        "addressRegion": "CA",
+        "postalCode": "10004",
+        "streetAddress": "11 Broadway, 2nd Floor"
+      },
+
+      "email": "info@flatironschool.com",
+      "telephone": "1 (888) 958-0569",
+      "description": "A coding school offering Online and NYC bootcamps that empower you to become a web developer, iOS developer, and more. Free coding classes available.",
+
+      "brand": [
+        "Flatiron School",
+        "learn.co"
+      ],
+
+      "memberOf": {
+        "@type": "ProgramMembership",
+        "hostingOrganization": {
+          "name": "New Economy Skills Training Association (NESTA)",
+          "url": "thenesta.org"
+        }
+      },
+
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Coding Bootcamp Programs",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Product",
+                "name": "Online Web Developer Program",
+                "url": "https://www.flatironschool.com/programs/online-web-developer-career-course",
+                "description": "Become a Web Developer with our proven curriculum. Learn at your own pace in our revolutionary online campus. Access seasoned instructors and collaborate with classmates 24/7."
+              }
+            }
+          }
+        ]
+      }
+    }
+  </script>
+  <!-- End schema.org/School -->
+</head>
+
+
+  <body data-env='production' data-options='{"learn_url":"https://learn.co","hubspot_id":69751}'>
+
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KZZ9JB"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KZZ9JB');</script>
+    <!-- End Google Tag Manager -->
+
+    <header class="site-header">
+
+  <nav class="site-header__supernav">
+
+    <div class="site-header__supernav__inner">
+
+      <!-- Micro-logo -->
+      <a class="site-header__micro-logo" href="/">
+        <svg>
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/sprite.svg#svg__micro-logo"></use>
+        </svg>
+      </a>
+
+      <!-- Mini-logo -->
+      <a class="site-header__mini-logo" href="/">
+        <svg>
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/sprite.svg#svg__mini-logo"></use>
+        </svg>
+      </a>
+
+      <!-- Tagline -->
+
+      <ul class="horizontal-list horizontal-list--bulleted site-header__contact site-header__contact--labels">
+        <li><a href="tel:1 (888) 958-0569">1 (888) 958-0569</a></li>
+        <li><a class="js--obscure-mailto" data-address="info AT flatironschool DOT com"></a></li>
+      </ul>
+      
+      <div class="site-header__supernav__main">
+
+        <ul class="horizontal-list site-header__contact site-header__contact--icons">
+
+          <li>
+            <a href="tel:1 (888) 958-0569">
+              <svg width="20px" height="16px">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/sprite.svg#svg__icon--phone"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li>
+            <a class="js--obscure-mailto" data-address="info AT flatironschool DOT com" data-keep-contents="true">
+              <svg width="20px" height="28px">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/sprite.svg#svg__icon--mail"></use>
+              </svg>
+            </a>
+          </li>
+
+        </ul>
+
+        <a href="https://learn.co/sign_in/" target="_blank" class="site-header__sign-in util--show-can-run-learn">
+          <svg height="16" width="12"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/sprite.svg#svg__bolt--small"></use></svg><!-- Leave no whitespace here --><span class="util--hide-large">Sign In</span><!-- Leave no whitespace here --><span class="util--show-large-up">Already a student? Sign in to Learn.co</span>
+        </a>
+
+        <!-- Main CTA -->
+
+        
+
+          <!-- Default CTA -->
+          
+
+        
+
+        <a
+          class="button button--color-purple button--corners-tight site-header__button"
+          
+            href="#"
+            data-target="overlay"
+            data-params='{"type":"program","headline":"Start a Free Online Intro Course Today","background":"https://flatironschool.imgix.net/overlay-bg-online-v2.jpg","formID":"36dd9919-5b4d-4317-9164-2d095e4bfe2b","poi":"free","poi_label":"Free Intro Course","flow":[{"icon":"bolt","text":"Enter your email to access our online campus, <strong>Learn.co</strong>\n","text_touch":"Enter your email and we’ll send you a link to click on your desktop computer\n"},{"icon":"ruby_or_js","text":"Choose a <strong>FREE</strong> intro course: <strong>Javascript</strong> or <strong>Ruby</strong>. We’ll help you decide.\n"},{"icon":"icon--graduation","text":"Finishing will give you a head start in applying for and completing many of our paid courses.\n"}]}'
+          
+        >
+          <h3 class="site-header__button__title">
+            <span class="util--show-mobile">Free Course</span>
+            <span class="util--show-small-up">Try a Free Intro Course Online</span>
+          </h3>
+          <h3 class="site-header__button__subtitle util--show-small-up">
+            Javascript and Ruby Available. Start Now!
+          </h3>
+        </a>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+  <nav class="site-header__nav">
+
+    <div class="site-header__nav__inner">
+
+      <!-- Logo -->
+      <a href="/" class="site-header__logo">
+        <svg>
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/sprite.svg#svg__logo"></use>
+        </svg>
+      </a>
+
+      <!-- Main Nav – Desktop -->
+      <ul class="site-header__menu site-header__menu--desktop">
+        
+        
+        
+          
+            
+            <li>
+              <a
+                href="/campuses/online/"
+                class="site-header__menu__link site-header__menu__dropdown-trigger site-header__menu__dropdown-trigger--has-icon site-header__menu__dropdown-trigger--primary js--header-dropdown-trigger"
+                
+                data-target="campus-online"
+              >
+                
+                <svg class="site-header__menu__dropdown-trigger__icon" width="12" height="16" fill="#1ca4d0"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/sprite.svg#svg__bolt"></use></svg>
+                
+                <span class="util--hide-large">Online</span>
+                <span class="util--show-large-up">Online Campus</span>
+                <div class="site-header__menu__dropdown-trigger__handle">
+                  <svg class="site-header__menu__dropdown-trigger__handle__caret"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/sprite.svg#svg__caret"></use></svg>
+                </div>
+              </a>
+            </li>
+
+          
+
+        
+        
+          
+            
+            <li>
+              <a
+                href="/campuses/nyc/"
+                class="site-header__menu__link site-header__menu__dropdown-trigger site-header__menu__dropdown-trigger--primary js--header-dropdown-trigger"
+                
+                data-target="campus-nyc"
+              >
+                
+                <span class="util--hide-large">NYC</span>
+                <span class="util--show-large-up">NYC Campus</span>
+                <div class="site-header__menu__dropdown-trigger__handle">
+                  <svg class="site-header__menu__dropdown-trigger__handle__caret"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/sprite.svg#svg__caret"></use></svg>
+                </div>
+              </a>
+            </li>
+
+          
+
+        
+        
+          
+            
+            <li>
+              <a
+                href="/hire-our-grads/"
+                class="site-header__menu__link"
+                data-target="/hire-our-grads/"
+                
+                
+              >
+                Hire Our Grads
+                
+              </a>
+            </li>
+
+          
+
+        
+        
+          
+            
+            <li>
+              <a
+                href="/about-us/"
+                class="site-header__menu__link"
+                data-target="/about-us/"
+                
+                
+              >
+                About Us
+                
+              </a>
+            </li>
+
+          
+
+        
+        
+          
+            
+            <li>
+              <a
+                href="http://blog.flatironschool.com"
+                class="site-header__menu__link"
+                data-target="http://blog.flatironschool.com"
+                
+                
+                  target="_blank"
+                
+              >
+                Blog
+                
+                  <svg class="site-header__menu__link__icon-external"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/sprite.svg#svg__icon--external"></use></svg>
+                
+              </a>
+            </li>
+
+          
+
+        
+        
+          
+            
+            <li>
+              <a
+                href="/events/"
+                class="site-header__menu__link"
+                data-target="/events/"
+                
+                
+              >
+                Events
+                
+              </a>
+            </li>
+
+          
+
+        
+
+      </ul>
+
+      <!-- Main Nav – Mobile -->
+      <ul class="site-header__menu site-header__menu--mobile">
+        
+        
+        
+          
+            
+            <li>
+              <a
+                href="/campuses/online"
+                class="site-header__menu__dropdown-trigger site-header__menu__dropdown-trigger--primary js--header-dropdown-trigger"
+                data-action="campus-dropdown"
+                data-target="campus-online"
+              >
+                Online
+                <div class="site-header__menu__dropdown-trigger__handle">
+                  <svg class="site-header__menu__dropdown-trigger__handle__caret"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/sprite.svg#svg__caret"></use></svg>
+                </div>
+              </a>
+            </li>
+
+          
+
+        
+        
+          
+            
+            <li>
+              <a
+                href="/campuses/nyc"
+                class="site-header__menu__dropdown-trigger site-header__menu__dropdown-trigger--primary js--header-dropdown-trigger"
+                data-action="campus-dropdown"
+                data-target="campus-nyc"
+              >
+                NYC
+                <div class="site-header__menu__dropdown-trigger__handle">
+                  <svg class="site-header__menu__dropdown-trigger__handle__caret"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/sprite.svg#svg__caret"></use></svg>
+                </div>
+              </a>
+            </li>
+
+          
+
+        
+        
+          
+
+            <li>
+              <a href="#" class="site-header__menu__dropdown-trigger js--header-dropdown-trigger" data-action="dropdown" data-target="mobile-more">
+                More
+                <div class="site-header__menu__dropdown-trigger__handle">
+                  <svg class="site-header__menu__dropdown-trigger__handle__caret"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/sprite.svg#svg__caret"></use></svg>
+                </div>
+              </a>
+            </li>
+
+          
+
+        
+
+      </ul>
+      
+    </div>
+
+  </nav>
+
+</header>
+
+    <section class="site-header-dropdowns">
+
+  
+
+    
+
+      
+
+      <div class="header-dropdown header-dropdown--campus js--header-dropdown" data-dropdown-id="campus-online">
+
+        
+
+          <div class="header-dropdown__aux">
+
+            <div class="media-block media-block--media-width-6 media-block--media-alignment-top header-dropdown__aux__block">
+              <div class="media-block__media util--padding-ts">
+                <a href="/campuses/online/" class="imgix-frame imgix-frame--circular imgix-fluid imgix-fluid-bg header-dropdown__aux__image-link" data-src="https://flatironschool.imgix.net/asset-4.jpg?fit=crop"></a>
+              </div>
+              <div class="media-block__content">
+                <div class="text-block text-block--secondary">
+                  
+                  <p>
+                    Study independently, not alone. Our online campus, Learn.co, is the best way to learn programming online.
+
+                  </p>
+                </div>
+                
+                  <a class="cta-link cta-link--secondary header-dropdown__aux__link util--margin-tl" href="/campuses/online/">Read more about Learn.co
+</a>
+                
+              </div>
+            </div>
+          </div>
+
+        
+
+        <div class="header-dropdown__main">
+            
+          
+
+            
+              <h3 class="heading heading--level-3 heading--font-size-smaller util--color-grey-light">Career Change Courses • Job Guaranteed</h3>
+            
+
+            
+            
+            
+
+            
+
+            <ul class="list list--separators list--separators--color-grey-faint list--separators--top-and-bottom list--spacing-none header-dropdown__list">
+
+              
+
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+                  
+                    
+                    
+
+                    <li>
+                      <a
+                        href="/programs/online-web-developer-career-course"
+                        class="
+                          link-row
+                          
+                           link-row--primary
+                        "
+
+                        
+                        
+
+                      >
+
+                        <span class="link-row__title">
+                          Online Web Developer Program
+
+                        </span>
+                        
+                      </a>
+                    </li>
+
+                  
+                
+              
+
+            </ul>
+
+          
+
+            
+              <h3 class="heading heading--level-3 heading--font-size-smaller util--color-grey-light">Certificate Courses</h3>
+            
+
+            
+            
+            
+
+            
+
+            <ul class="list list--separators list--separators--color-grey-faint list--separators--top-and-bottom list--spacing-none header-dropdown__list">
+
+              
+
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+                  
+                    
+                    
+
+                    <li>
+                      <a
+                        href="/programs/online-html-css-certificate-course"
+                        class="
+                          link-row
+                          
+                          
+                        "
+
+                        
+                        
+
+                      >
+
+                        <span class="link-row__title">
+                          HTML & CSS: Building Responsive Websites
+
+                        </span>
+                        
+                      </a>
+                    </li>
+
+                  
+                
+              
+                
+                  
+                    
+                    
+
+                    <li>
+                      <a
+                        href="/programs/online-ruby-certificate-course"
+                        class="
+                          link-row
+                          
+                          
+                        "
+
+                        
+                        
+
+                      >
+
+                        <span class="link-row__title">
+                          Ruby: Building Command-Line Applications
+
+                        </span>
+                        
+                      </a>
+                    </li>
+
+                  
+                
+              
+                
+                  
+                    
+                    
+
+                    <li>
+                      <a
+                        href="/programs/online-javascript-certificate-course"
+                        class="
+                          link-row
+                          
+                          
+                        "
+
+                        
+                        
+
+                      >
+
+                        <span class="link-row__title">
+                          Javascript: Creating Interactive Websites
+
+                        </span>
+                        
+                      </a>
+                    </li>
+
+                  
+                
+              
+                
+                  
+                    
+                    
+
+                    <li>
+                      <a
+                        href="#"
+                        class="
+                          link-row
+                           link-row--secondary
+                          
+                        "
+
+                        
+                        
+                          data-target="overlay"
+                          data-params='{"type":"hubspot","action":"list-signup","headline":"Get Notified When More Information is Available","button_text":"Submit","formID":"a6427cc4-e6c4-431f-8390-c0356508684f"}'
+                        
+
+                      >
+
+                        <span class="link-row__title">
+                          React: Building Front-End Applications
+
+                        </span>
+                        
+                      </a>
+                    </li>
+
+                  
+                
+              
+                
+              
+                
+              
+
+            </ul>
+
+          
+
+            
+              <h3 class="heading heading--level-3 heading--font-size-smaller util--color-grey-light">Free Courses</h3>
+            
+
+            
+            
+            
+
+            
+
+            <ul class="list list--separators list--separators--color-grey-faint list--separators--top-and-bottom list--spacing-none header-dropdown__list">
+
+              
+
+              
+                
+              
+                
+              
+                
+              
+                
+                  
+                    
+                    
+
+                    <li>
+                      <a
+                        href="/programs/online-bootcamp-prep-course"
+                        class="
+                          link-row
+                          
+                          
+                        "
+
+                        
+                        
+
+                      >
+
+                        <span class="link-row__title">
+                          Bootcamp Prep
+                        </span>
+                        
+                      </a>
+                    </li>
+
+                  
+                
+              
+                
+                  
+                    
+                    
+
+                    <li>
+                      <a
+                        href="/programs/online-intro-javascript-free-course"
+                        class="
+                          link-row
+                          
+                          
+                        "
+
+                        
+                        
+
+                      >
+
+                        <span class="link-row__title">
+                          Introduction to JavaScript
+                        </span>
+                        
+                      </a>
+                    </li>
+
+                  
+                
+              
+                
+                  
+                    
+                    
+
+                    <li>
+                      <a
+                        href="/programs/online-intro-ruby-free-course"
+                        class="
+                          link-row
+                          
+                          
+                        "
+
+                        
+                        
+
+                      >
+
+                        <span class="link-row__title">
+                          Introduction to Ruby
+                        </span>
+                        
+                      </a>
+                    </li>
+
+                  
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+                  
+                    
+                    
+
+                    <li>
+                      <a
+                        href="/programs/online-swift-free-course"
+                        class="
+                          link-row
+                          
+                          
+                        "
+
+                        
+                        
+
+                      >
+
+                        <span class="link-row__title">
+                          Swift: Building iOS Apps
+
+                        </span>
+                        
+                      </a>
+                    </li>
+
+                  
+                
+              
+                
+              
+
+            </ul>
+
+          
+          
+          
+            <h4 class="util--text-align-r heading heading--level-4 heading--color-lighter heading--weight-lighter">* Registration not yet open</h4>
+          
+        </div>
+
+      </div>
+
+    
+
+  
+
+    
+
+      
+
+      <div class="header-dropdown header-dropdown--campus js--header-dropdown" data-dropdown-id="campus-nyc">
+
+        
+
+          <div class="header-dropdown__aux">
+
+            <div class="media-block media-block--media-width-6 media-block--media-alignment-top header-dropdown__aux__block">
+              <div class="media-block__media util--padding-ts">
+                <a href="/campuses/nyc" class="imgix-frame imgix-frame--circular imgix-fluid imgix-fluid-bg header-dropdown__aux__image-link" data-src="https://flatironschool.imgix.net/asset-2.jpg?fit=crop"></a>
+              </div>
+              <div class="media-block__content">
+                <div class="text-block text-block--secondary">
+                  
+                  <p>
+                    Study with top-rated faculty and a most rigorous curriculum. Our Manhattan campus is the best way to learn programming in greater New York City.
+
+                  </p>
+                </div>
+                
+                  <a class="cta-link cta-link--secondary header-dropdown__aux__link util--margin-tl" href="/campuses/nyc">Read more about the NYC Campus
+</a>
+                
+              </div>
+            </div>
+          </div>
+
+        
+
+        <div class="header-dropdown__main">
+            
+          
+
+            
+              <h3 class="heading heading--level-3 heading--font-size-smaller util--color-grey-light">Career Change Courses • Job Guaranteed</h3>
+            
+
+            
+            
+            
+
+            
+
+            <ul class="list list--separators list--separators--color-grey-faint list--separators--top-and-bottom list--spacing-none header-dropdown__list">
+
+              
+
+              
+                
+                  
+                    
+                    
+
+                    <li>
+                      <a
+                        href="/programs/nyc-web-developer-career-course"
+                        class="
+                          link-row
+                          
+                          
+                        "
+
+                        
+                        
+
+                      >
+
+                        <span class="link-row__title">
+                          Web Developer Program, NYC
+                        </span>
+                        
+                      </a>
+                    </li>
+
+                  
+                
+              
+                
+                  
+                    
+                    
+
+                    <li>
+                      <a
+                        href="/programs/nyc-mobile-developer-career-course"
+                        class="
+                          link-row
+                          
+                          
+                        "
+
+                        
+                        
+
+                      >
+
+                        <span class="link-row__title">
+                          iOS Developer Program, NYC
+                        </span>
+                        
+                      </a>
+                    </li>
+
+                  
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+
+            </ul>
+
+          
+
+            
+              <a href="http://www.techtalentpipeline.nyc/" target="_blank" class="link--no-decoration heading heading--level-3 heading--font-size-smaller util--color-grey-light">
+                NYC Tech Talent Pipeline
+                <svg width="12" height="12" fill="#ccc"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/sprite.svg#svg__icon--external"></use></svg>
+              </a>
+            
+
+            
+            
+            
+
+            
+              <h4 class="heading heading--level-4 heading--font-size-smaller heading--weight-lighter util--margin-ts">For NYC residents earning less than $50,000 per year and meeting all federal selective service requirements.</h4>
+            
+
+            <ul class="list list--separators list--separators--color-grey-faint list--separators--top-and-bottom list--spacing-none header-dropdown__list">
+
+              
+
+              
+                
+              
+                
+              
+                
+                  
+                    
+                    
+
+                    <li>
+                      <a
+                        href="/programs/nyc-mobile-dev-corps"
+                        class="
+                          link-row
+                          
+                          
+                        "
+
+                        
+                        
+
+                      >
+
+                        <span class="link-row__title">
+                          Mobile Dev Corps
+                        </span>
+                        
+                      </a>
+                    </li>
+
+                  
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+
+            </ul>
+
+          
+          
+          
+        </div>
+
+      </div>
+
+    
+
+  
+
+    
+
+      <div class="header-dropdown js--header-dropdown" data-dropdown-id="mobile-more">
+
+        <div class="header-dropdown__main">
+
+          <ul class="list list--separators list--separators--color-grey-faint list--separators--top-and-bottom list--spacing-none header-dropdown__list">
+            
+              <li>
+                <a
+                  class="link-row"
+                  href="/hire-our-grads/"
+                  
+              >
+                  <span class="link-row__title">
+                    Hire Our Grads
+                    
+                  </span>
+                </a>
+              </li>
+            
+              <li>
+                <a
+                  class="link-row"
+                  href="/about-us/"
+                  
+              >
+                  <span class="link-row__title">
+                    About Us
+                    
+                  </span>
+                </a>
+              </li>
+            
+              <li>
+                <a
+                  class="link-row"
+                  href="/events/"
+                  
+              >
+                  <span class="link-row__title">
+                    Events
+                    
+                  </span>
+                </a>
+              </li>
+            
+              <li>
+                <a
+                  class="link-row"
+                  href="http://blog.flatironschool.com"
+                  
+                    target="_blank"
+                  
+              >
+                  <span class="link-row__title">
+                    Blog
+                    
+                      <svg class="header-dropdown__list__item__icon-external"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/sprite.svg#svg__icon--external"></use></svg>
+                    
+                  </span>
+                </a>
+              </li>
+            
+          </ul>
+
+          
+            
+            <div class="util--padding-tl util--text-align-c">
+
+              <div class="util--margin-bl">
+                <ul class="list">
+                  <li>
+                    <a class="cta-link cta-link--colors-grey" href="tel:1 (888) 958-0569">
+                      1 (888) 958-0569
+                    </a>
+                  </li>
+                  <li>
+                    <a class="cta-link cta-link--colors-grey" href="https://www.google.com/maps?q=11+Broadway,+Suite+260,+New+York,+NY+10004&um=1&ie=UTF-8&sa=X&ved=0ahUKEwiZ153Oi5nNAhXDCh4KHfK8DMkQ_AUICCgB
+">
+                      11 Broadway, 2nd Floor,
+New York, NY 10004
+
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <ul class="horizontal-list horizontal-list--display-inline">
+                
+                  <li>
+                    <a href="https://www.facebook.com/FlatironSchool/" data-network="facebook">
+                      <svg height="24" width="24" fill="#999">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/sprite.svg#svg__icon--facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="https://twitter.com/flatironschool" data-network="twitter">
+                      <svg height="24" width="24" fill="#999">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/sprite.svg#svg__icon--twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="https://www.instagram.com/flatironschool/" data-network="instagram">
+                      <svg height="24" width="24" fill="#999">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/sprite.svg#svg__icon--instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="https://github.com/flatiron-school" data-network="github">
+                      <svg height="24" width="24" fill="#999">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/sprite.svg#svg__icon--github"></use>
+                      </svg>
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="http://www.quora.com/Flatiron-School" data-network="quora">
+                      <svg height="24" width="24" fill="#999">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/sprite.svg#svg__icon--quora"></use>
+                      </svg>
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="https://medium.com/learn-love-code" data-network="medium">
+                      <svg height="24" width="24" fill="#999">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/sprite.svg#svg__icon--medium"></use>
+                      </svg>
+                    </a>
+                  </li>
+                
+              </ul>
+
+            </div>
+
+          
+
+        </div>
+
+      </div>
+
+    
+
+  
+
+</section>
+
+
+    
+
+  <section class="site-hero site-hero--home">
+    
+    <div class="site-hero__wrapper">
+      
+      <div class="site-hero__inner">
+
+          <h1 class="site-hero__headline">Learn. Love.&nbsp;Code.</h1>
+
+          <div class="site-hero__subhead"><p>Learn on the most advanced programming education platform and trust the school with the most comprehensive student outcome reporting.</p>
+</div>
+
+          <ul class="list site-hero__ctas">
+            
+            
+
+  <li>
+    
+    
+
+    
+
+        <a
+          href="#"
+          class="button button--has-icon"
+          data-target="overlay"
+          data-params='{"type":"program","headline":"Start a Free Online Intro Course Today","background":"https://flatironschool.imgix.net/overlay-bg-online-v2.jpg","formID":"36dd9919-5b4d-4317-9164-2d095e4bfe2b","poi":"free","poi_label":"Free Intro Course","flow":[{"icon":"bolt","text":"Enter your email to access our online campus, <strong>Learn.co</strong>\n","text_touch":"Enter your email and we’ll send you a link to click on your desktop computer\n"},{"icon":"ruby_or_js","text":"Choose a <strong>FREE</strong> intro course: <strong>Javascript</strong> or <strong>Ruby</strong>. We’ll help you decide.\n"},{"icon":"icon--graduation","text":"Finishing will give you a head start in applying for and completing many of our paid courses.\n"}]}'
+        >
+          
+          <svg class="button__icon">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/sprite.svg#svg__bolt"></use>
+          </svg>
+          
+          
+          
+            Try a course for Free
+          
+        </a>
+
+    
+
+  </li>
+
+
+
+            
+          </ul>
+          
+      </div>
+
+    </div>
+
+    
+
+    <div class="site-hero__image imgix-fluid imgix-fluid-bg util--hide-medium util--hide-large" data-src="https://flatironschool.imgix.net/homepage/hero-homepage-mobile-v7.jpg?fit=crop"></div>
+    <div class="site-hero__image imgix-fluid imgix-fluid-bg util--show-small-up" data-src="https://flatironschool.imgix.net/homepage/hero-homepage-v3.jpg?fit=crop"></div>
+
+  </section>
+
+
+
+
+
+    <section class="site-content">
+      <div class="level level--bg-color-grey-faint level--border-bottom-thick ">
+  <div class="level__inner">
+    <div class="module module--margin-top-large module--margin-bottom-large">
+      <div class="module__head util--text-align-c">
+        <h2 class="heading heading--level-3">
+          What’s Happening at Flatiron?
+        </h2>
+      </div>
+      <div class="module__body">
+        <div class="flex-grid special--flex-grid-homepage-ctas" data-allowed-cols="two four">
+          <ul class="flex-grid__list">
+            
+              <li>
+                <a class="image-frame" href="http://blog.flatironschool.com/encouraging-more-women-to-learn-to-code/" target="_blank">
+                  <img class="image-frame__image" src="https://flatironschool.imgix.net/homepage/community-karlie.jpg" alt="" />
+                </a>
+              </li>
+            
+              <li>
+                <a class="image-frame" href="/programs/online-web-developer-career-course/">
+                  <img class="image-frame__image" src="https://flatironschool.imgix.net/homepage/community-coding-bootcamp.jpg" alt="" />
+                </a>
+              </li>
+            
+              <li>
+                <a class="image-frame" href="http://blog.flatironschool.com/quorathon-recap-everything-you-wanted-to-know-about-learning-to-code/" target="_blank">
+                  <img class="image-frame__image" src="https://flatironschool.imgix.net/homepage/community-learn-to-code.jpg" alt="" />
+                </a>
+              </li>
+            
+              <li>
+                <a class="image-frame" href="http://blog.flatironschool.com/comparing-coding-bootcamps-how-to-find-the-right-course-for-you/" target="_blank">
+                  <img class="image-frame__image" src="https://flatironschool.imgix.net/homepage/community-comparison.jpg" alt="" />
+                </a>
+              </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  
+
+  
+    <a name="history-and-stats"></a>
+
+<div class="util--hide-large util--hide-medium util--hide-small">
+  <a name="history-and-stats"></a>
+
+<section class="level level--vertical-padding-none level--flush">
+
+  
+    <div class="image-frame">
+      <img class="image-frame__image" src="https://flatironschool.imgix.net/homepage/jobs-report-v3.png" alt="">
+    </div>
+  
+
+</section>
+
+<section class="level level--flush-bottom">
+
+  <div class="level__inner">
+
+    <div class="row">
+      <div class="module module--margin-top-larger module--margin-bottom-larger">
+        <div class="module__body">
+          <div class="text-block text-block--primary util--pull-center text-block--centered">
+            
+              <h1>Trusted History. Verified&nbsp;Stats.</h1>
+            
+            
+              <p>Since 2012, we’ve been helping passionate people launch careers as programmers. <strong>98% of our students</strong> are hired after graduation. Flatiron is the <strong>only coding bootcamp in the world with an independently verified job placement report for all graduates.</strong> Download the report for the full story.</p>
+
+            
+          </div>
+          
+          <ul class="list util--text-align-c util--padding-tl util--margin-bl">
+
+            
+  <li>
+    
+      
+        <a
+          href="#"
+          class="button button--color-green"
+          data-target="overlay"
+          data-params='{"type":"hubspot","headline":"Download the Report","formID":"190e2a6c-d819-42a6-ac19-fc7fed99555f"}'
+        >
+          
+          
+          Download Jobs Report
+        </a>
+
+    
+  </li>
+
+  <li>
+    
+      <a class="cta-link cta-link--has-icon heading--font-size-larger" href="/programs/online-web-developer-career-course/">
+        
+          <svg class="cta-link--has-icon__icon">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/sprite.svg#svg__icon--bolt"></use>
+          </svg>
+        
+        <span">
+          Become a Developer Online
+        </span>
+        <span class="util--hide-mobile util--hide-small util--hide-medium util--hide-large">
+          
+        </span>
+      </a>
+    
+  </li>
+
+  <li>
+    
+      <a class="cta-link cta-link--has-icon heading--font-size-larger" href="/programs/nyc-web-developer-career-course/">
+        
+          <svg class="cta-link--has-icon__icon">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/sprite.svg#svg__icon--city"></use>
+          </svg>
+        
+        <span">
+          Become a Developer in NYC
+        </span>
+        <span class="util--hide-mobile util--hide-small util--hide-medium util--hide-large">
+          
+        </span>
+      </a>
+    
+  </li>
+
+
+
+          </ul>
+          
+        </div>
+      </div>
+    </div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+</section>
+
+
+<section class="level level--flush-bottom level--border-bottom-thick">
+  <div class="level__inner">
+    <!-- Mobile Version -->
+
+  
+    <div class="row util--hide-medium util--hide-large">
+      <div class="module module--flush-bottom">
+        <div class="module__body">
+          <div class="flex-grid flex-grid--border-top" data-allowed-cols="one">
+            <ul class="flex-grid__list">
+              <li>
+                <div class="module">
+                  
+
+                  
+
+                  
+                    <div class="media-block media-block--media-width-4 media-block--alignment-top">
+  <div class="media-block__media">
+    <div class="imgix-frame imgix-frame--ratio-square imgix-frame--circular imgix-fluid imgix-fluid-bg" data-src="https://flatironschool.imgix.net/headshots/rebekah-rombom.jpg?fit=crop&crop=faces"></div>
+  </div>
+  <div class="media-block__content">
+    <div class="text-block text-block--tertiary text-block--width-auto">
+      <p>“We do everything we can… but that’s not why they get hired. At the end of the day, they’re just pretty amazing – those are the kinds of candidates that people want to work with.”</p>
+
+    </div>
+    <ul class="util--hide-small util--hide-mobile horizontal-list horizontal-list--slashed util--margin-tl">
+      <li>
+        <h3 class="heading heading--level-3 heading--font-size-smaller heading--color-lighter">Rebekah Rombom</h3>
+      </li>
+      <li>
+        <span class="util--font-size-3 util--color-grey-light util--align-sub">
+          Employer Relations & Placements
+        </span>
+      </li>
+    </ul>
+    <ul class="util--hide-large util--hide-medium list list--spacing-none util--margin-tl">
+      <li>
+        <h3 class="heading heading--level-3 heading--font-size-smaller heading--color-lighter">Rebekah Rombom</h3>
+      </li>
+      <li>
+        <span class="util--font-size-3 util--color-grey-light util--align-sub">
+          Employer Relations & Placements
+        </span>
+      </li>
+    </ul>
+    <div class="util--margin-tl">
+      <a href="https://www.quora.com/How-successful-are-code-bootcamps-like-Dev-Bootcamp-and-Flatiron-School-at-job-placement/answer/Rebekah-Rombom-1" target="_blank" class="cta-link cta-link--secondary cta-link--colors-grey-light">
+        Read full post on
+        <svg height="19" width="48">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/sprite.svg#svg__quora-logo"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>
+
+                  
+
+                  
+
+                  
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+  
+
+
+<div class="row util--show-medium-up">
+  <div class="module module--flush-bottom">
+    <div class="module__body">
+      <div class="flex-grid flex-grid--border-top" data-allowed-cols="two one">
+        <ul class="flex-grid__list">
+
+          
+            <li>
+              <div class="module module--margin-large">
+                
+
+                
+
+                
+                  <div class="media-block media-block--media-width-4 media-block--alignment-top">
+  <div class="media-block__media">
+    <div class="imgix-frame imgix-frame--ratio-square imgix-frame--circular imgix-fluid imgix-fluid-bg" data-src="https://flatironschool.imgix.net/headshots/rebekah-rombom.jpg?fit=crop&crop=faces"></div>
+  </div>
+  <div class="media-block__content">
+    <div class="text-block text-block--tertiary text-block--width-auto">
+      <p>“We do everything we can… but that’s not why they get hired. At the end of the day, they’re just pretty amazing – those are the kinds of candidates that people want to work with.”</p>
+
+    </div>
+    <ul class="util--hide-small util--hide-mobile horizontal-list horizontal-list--slashed util--margin-tl">
+      <li>
+        <h3 class="heading heading--level-3 heading--font-size-smaller heading--color-lighter">Rebekah Rombom</h3>
+      </li>
+      <li>
+        <span class="util--font-size-3 util--color-grey-light util--align-sub">
+          Employer Relations & Placements
+        </span>
+      </li>
+    </ul>
+    <ul class="util--hide-large util--hide-medium list list--spacing-none util--margin-tl">
+      <li>
+        <h3 class="heading heading--level-3 heading--font-size-smaller heading--color-lighter">Rebekah Rombom</h3>
+      </li>
+      <li>
+        <span class="util--font-size-3 util--color-grey-light util--align-sub">
+          Employer Relations & Placements
+        </span>
+      </li>
+    </ul>
+    <div class="util--margin-tl">
+      <a href="https://www.quora.com/How-successful-are-code-bootcamps-like-Dev-Bootcamp-and-Flatiron-School-at-job-placement/answer/Rebekah-Rombom-1" target="_blank" class="cta-link cta-link--secondary cta-link--colors-grey-light">
+        Read full post on
+        <svg height="19" width="48">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/sprite.svg#svg__quora-logo"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>
+
+                
+
+                
+
+                
+              </div>
+            </li>
+          
+            <li>
+              <div class="module module--margin-large">
+                
+
+                
+
+                
+
+                
+
+                
+                  <div class="text-block text-block--tertiary">
+  <p><strong>Sofia Pitt</strong>: “Demand is high, teachers are scarce and [Flatiron School Founders] Enbar and Flombaum are determined to keep their nearly perfect record of employment post-completion intact.”</p>
+
+</div>
+
+<div class="util--margin-tl">
+  <img srcset="https://flatironschool.imgix.net/logos/cnbc.png?h=64&w=192&fit=max 1x, https://flatironschool.imgix.net/logos/cnbc.png?h=48&w=192&dpr=2&fit=max 2x" src="https://flatironschool.imgix.net/logos/cnbc.png?h=48&w=128&fit=max" />
+</div>
+
+<div class="util--margin-tl">
+  <a href="http://www.cnbc.com/2015/06/12/make-70000-a-year-with-no-degree.html" target="_blank" class="cta-link cta-link--secondary cta-link--colors-grey-light">Read full article</a>
+</div>
+
+                
+              </div>
+            </li>
+          
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+</section>
+
+
+</div>
+
+<div class="util--hide-mobile">
+
+<section class="level level--flush-bottom">
+
+    <div class="level__inner">
+
+      <div class="row util--margin-txl util--margin-bxl">
+        <div class="module module--outdent--right">
+          <div class="module__body">
+            <div class="media-block media-block--side-alt media-block--spacing-large media-block--media-width-20-to-30 media-block--media-alignment-top">
+              <div class="media-block__content">
+                <div class="text-block text-block--primary util--margin-bm">
+                  <h1>Trusted History. Verified&nbsp;Stats.</h1>
+                  <p>Since 2012, we’ve been helping passionate people launch careers as programmers. <strong>98% of our students</strong> are hired after graduation. Flatiron is the <strong>only coding bootcamp in the world with an independently verified job placement report for all graduates.</strong> Download the report for the full story.</p>
+
+                </div>
+                <ul class="list list--spacing-large util--padding-tl">
+
+                  
+  <li>
+    
+      
+        <a
+          href="#"
+          class="button button--color-green"
+          data-target="overlay"
+          data-params='{"type":"hubspot","headline":"Download the Report","formID":"190e2a6c-d819-42a6-ac19-fc7fed99555f"}'
+        >
+          
+          
+          Download Jobs Report
+        </a>
+
+    
+  </li>
+
+  <li>
+    
+      <a class="cta-link cta-link--has-icon" href="/programs/online-web-developer-career-course/">
+        
+          <svg class="cta-link--has-icon__icon">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/sprite.svg#svg__icon--bolt"></use>
+          </svg>
+        
+        <span">
+          Become a Developer Online
+        </span>
+        <span class="util--hide-mobile util--hide-small util--hide-medium util--hide-large">
+          
+        </span>
+      </a>
+    
+  </li>
+
+  <li>
+    
+      <a class="cta-link cta-link--has-icon" href="/programs/nyc-web-developer-career-course/">
+        
+          <svg class="cta-link--has-icon__icon">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/sprite.svg#svg__icon--city"></use>
+          </svg>
+        
+        <span">
+          Become a Developer in NYC
+        </span>
+        <span class="util--hide-mobile util--hide-small util--hide-medium util--hide-large">
+          
+        </span>
+      </a>
+    
+  </li>
+
+
+
+                </ul>
+              </div>
+              <div class="media-block__media">
+                
+                  <div class="image-frame">
+                    <img class="image-frame__image" src="https://flatironschool.imgix.net/homepage/jobs-report-v3.png">
+                  </div>
+                
+
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+  </section>
+
+  
+  <section class="level level--flush-bottom level--border-bottom-thick">
+    <div class="level__inner">
+      <!-- Mobile Version -->
+
+  
+    <div class="row util--hide-medium util--hide-large">
+      <div class="module module--flush-bottom">
+        <div class="module__body">
+          <div class="flex-grid flex-grid--border-top" data-allowed-cols="one">
+            <ul class="flex-grid__list">
+              <li>
+                <div class="module">
+                  
+
+                  
+
+                  
+                    <div class="media-block media-block--media-width-4 media-block--alignment-top">
+  <div class="media-block__media">
+    <div class="imgix-frame imgix-frame--ratio-square imgix-frame--circular imgix-fluid imgix-fluid-bg" data-src="https://flatironschool.imgix.net/headshots/rebekah-rombom.jpg?fit=crop&crop=faces"></div>
+  </div>
+  <div class="media-block__content">
+    <div class="text-block text-block--tertiary text-block--width-auto">
+      <p>“We do everything we can… but that’s not why they get hired. At the end of the day, they’re just pretty amazing – those are the kinds of candidates that people want to work with.”</p>
+
+    </div>
+    <ul class="util--hide-small util--hide-mobile horizontal-list horizontal-list--slashed util--margin-tl">
+      <li>
+        <h3 class="heading heading--level-3 heading--font-size-smaller heading--color-lighter">Rebekah Rombom</h3>
+      </li>
+      <li>
+        <span class="util--font-size-3 util--color-grey-light util--align-sub">
+          Employer Relations & Placements
+        </span>
+      </li>
+    </ul>
+    <ul class="util--hide-large util--hide-medium list list--spacing-none util--margin-tl">
+      <li>
+        <h3 class="heading heading--level-3 heading--font-size-smaller heading--color-lighter">Rebekah Rombom</h3>
+      </li>
+      <li>
+        <span class="util--font-size-3 util--color-grey-light util--align-sub">
+          Employer Relations & Placements
+        </span>
+      </li>
+    </ul>
+    <div class="util--margin-tl">
+      <a href="https://www.quora.com/How-successful-are-code-bootcamps-like-Dev-Bootcamp-and-Flatiron-School-at-job-placement/answer/Rebekah-Rombom-1" target="_blank" class="cta-link cta-link--secondary cta-link--colors-grey-light">
+        Read full post on
+        <svg height="19" width="48">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/sprite.svg#svg__quora-logo"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>
+
+                  
+
+                  
+
+                  
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+  
+
+
+<div class="row util--show-medium-up">
+  <div class="module module--flush-bottom">
+    <div class="module__body">
+      <div class="flex-grid flex-grid--border-top" data-allowed-cols="two one">
+        <ul class="flex-grid__list">
+
+          
+            <li>
+              <div class="module module--margin-large">
+                
+
+                
+
+                
+                  <div class="media-block media-block--media-width-4 media-block--alignment-top">
+  <div class="media-block__media">
+    <div class="imgix-frame imgix-frame--ratio-square imgix-frame--circular imgix-fluid imgix-fluid-bg" data-src="https://flatironschool.imgix.net/headshots/rebekah-rombom.jpg?fit=crop&crop=faces"></div>
+  </div>
+  <div class="media-block__content">
+    <div class="text-block text-block--tertiary text-block--width-auto">
+      <p>“We do everything we can… but that’s not why they get hired. At the end of the day, they’re just pretty amazing – those are the kinds of candidates that people want to work with.”</p>
+
+    </div>
+    <ul class="util--hide-small util--hide-mobile horizontal-list horizontal-list--slashed util--margin-tl">
+      <li>
+        <h3 class="heading heading--level-3 heading--font-size-smaller heading--color-lighter">Rebekah Rombom</h3>
+      </li>
+      <li>
+        <span class="util--font-size-3 util--color-grey-light util--align-sub">
+          Employer Relations & Placements
+        </span>
+      </li>
+    </ul>
+    <ul class="util--hide-large util--hide-medium list list--spacing-none util--margin-tl">
+      <li>
+        <h3 class="heading heading--level-3 heading--font-size-smaller heading--color-lighter">Rebekah Rombom</h3>
+      </li>
+      <li>
+        <span class="util--font-size-3 util--color-grey-light util--align-sub">
+          Employer Relations & Placements
+        </span>
+      </li>
+    </ul>
+    <div class="util--margin-tl">
+      <a href="https://www.quora.com/How-successful-are-code-bootcamps-like-Dev-Bootcamp-and-Flatiron-School-at-job-placement/answer/Rebekah-Rombom-1" target="_blank" class="cta-link cta-link--secondary cta-link--colors-grey-light">
+        Read full post on
+        <svg height="19" width="48">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/sprite.svg#svg__quora-logo"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>
+
+                
+
+                
+
+                
+              </div>
+            </li>
+          
+            <li>
+              <div class="module module--margin-large">
+                
+
+                
+
+                
+
+                
+
+                
+                  <div class="text-block text-block--tertiary">
+  <p><strong>Sofia Pitt</strong>: “Demand is high, teachers are scarce and [Flatiron School Founders] Enbar and Flombaum are determined to keep their nearly perfect record of employment post-completion intact.”</p>
+
+</div>
+
+<div class="util--margin-tl">
+  <img srcset="https://flatironschool.imgix.net/logos/cnbc.png?h=64&w=192&fit=max 1x, https://flatironschool.imgix.net/logos/cnbc.png?h=48&w=192&dpr=2&fit=max 2x" src="https://flatironschool.imgix.net/logos/cnbc.png?h=48&w=128&fit=max" />
+</div>
+
+<div class="util--margin-tl">
+  <a href="http://www.cnbc.com/2015/06/12/make-70000-a-year-with-no-degree.html" target="_blank" class="cta-link cta-link--secondary cta-link--colors-grey-light">Read full article</a>
+</div>
+
+                
+              </div>
+            </li>
+          
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </section>
+  
+
+</div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+  
+
+  
+
+  
+    <a name="how-we-learn"></a>
+
+<section class="level level--vertical-padding-none level--flush">
+
+  
+    <div class="imgix-frame imgix-frame--ratio-short imgix-frame--shrink-ratio imgix-fluid imgix-fluid-bg" data-src="https://flatironschool.imgix.net/homepage/how-we-learn-4.jpg?fit=crop"></div>
+  
+
+</section>
+
+<section class="level level--flush-bottom">
+
+  <div class="level__inner">
+
+    <div class="row">
+      <div class="module module--margin-top-larger module--margin-bottom-larger">
+        <div class="module__body">
+          <div class="text-block text-block--primary util--pull-center text-block--centered">
+            
+              <h1>A New Way to&nbsp;Learn</h1>
+            
+            
+              <p>Our custom-built platform, <strong>Learn.co</strong>, facilitates collaboration and allows students to train with actual developer tools like GitHub and Atom. After graduation, Flatiron students are fully prepared to apply their new skills in real software teams.</p>
+
+            
+          </div>
+          
+          <ul class="list util--text-align-c util--padding-tl util--margin-bl">
+
+            
+  <li>
+    
+      <a class="cta-link cta-link--has-icon heading--font-size-larger" href="/campuses/online/#campus-tour">
+        
+          <svg class="cta-link--has-icon__icon">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/sprite.svg#svg__icon--bolt"></use>
+          </svg>
+        
+        <span">
+          Our Online Campus, Learn.co
+        </span>
+        <span class="util--hide-mobile util--hide-small util--hide-medium util--hide-large">
+          
+        </span>
+      </a>
+    
+  </li>
+
+  <li>
+    
+      <a class="cta-link cta-link--has-icon heading--font-size-larger" href="/campuses/nyc/#campus-tour">
+        
+          <svg class="cta-link--has-icon__icon">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/sprite.svg#svg__icon--city"></use>
+          </svg>
+        
+        <span class="util--hide-mobile">
+          Our 20,000 square-foot NYC Campus
+        </span>
+        <span class=" util--hide-small util--hide-medium util--hide-large">
+          Our NYC Campus
+        </span>
+      </a>
+    
+  </li>
+
+
+
+          </ul>
+          
+        </div>
+      </div>
+    </div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+</section>
+
+
+<section class="level level--flush-bottom level--border-bottom-thick">
+  <div class="level__inner">
+    <!-- Mobile Version -->
+
+  
+    <div class="row util--hide-medium util--hide-large">
+      <div class="module module--flush-bottom">
+        <div class="module__body">
+          <div class="flex-grid flex-grid--border-top" data-allowed-cols="one">
+            <ul class="flex-grid__list">
+              <li>
+                <div class="module">
+                  
+
+                  
+
+                  
+                    <div class="media-block media-block--media-width-4 media-block--alignment-top">
+  <div class="media-block__media">
+    <div class="imgix-frame imgix-frame--ratio-square imgix-frame--circular imgix-fluid imgix-fluid-bg" data-src="https://flatironschool.imgix.net/headshots/avi-flombaum.jpg?fit=crop&crop=faces"></div>
+  </div>
+  <div class="media-block__content">
+    <div class="text-block text-block--tertiary text-block--width-auto">
+      <p>“While most bootcamps have been focusing on expanding and enrolling more students, we’ve invested a tremendous amount of time in understanding how people learn effectively… Learn, our proprietary platform, is the earliest manifestation of that.”</p>
+
+    </div>
+    <ul class="util--hide-small util--hide-mobile horizontal-list horizontal-list--slashed util--margin-tl">
+      <li>
+        <h3 class="heading heading--level-3 heading--font-size-smaller heading--color-lighter">Avi Flombaum</h3>
+      </li>
+      <li>
+        <span class="util--font-size-3 util--color-grey-light util--align-sub">
+          Co-Founder & Dean
+        </span>
+      </li>
+    </ul>
+    <ul class="util--hide-large util--hide-medium list list--spacing-none util--margin-tl">
+      <li>
+        <h3 class="heading heading--level-3 heading--font-size-smaller heading--color-lighter">Avi Flombaum</h3>
+      </li>
+      <li>
+        <span class="util--font-size-3 util--color-grey-light util--align-sub">
+          Co-Founder & Dean
+        </span>
+      </li>
+    </ul>
+    <div class="util--margin-tl">
+      <a href="https://www.quora.com/How-is-the-Flatiron-School-different-from-other-Programming-Bootcamps" target="_blank" class="cta-link cta-link--secondary cta-link--colors-grey-light">
+        Read full post on
+        <svg height="19" width="48">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/sprite.svg#svg__quora-logo"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>
+
+                  
+
+                  
+
+                  
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+
+<div class="row util--show-medium-up">
+  <div class="module module--flush-bottom">
+    <div class="module__body">
+      <div class="flex-grid flex-grid--border-top" data-allowed-cols="two one">
+        <ul class="flex-grid__list">
+
+          
+            <li>
+              <div class="module module--margin-large">
+                
+
+                
+
+                
+                  <div class="media-block media-block--media-width-4 media-block--alignment-top">
+  <div class="media-block__media">
+    <div class="imgix-frame imgix-frame--ratio-square imgix-frame--circular imgix-fluid imgix-fluid-bg" data-src="https://flatironschool.imgix.net/headshots/avi-flombaum.jpg?fit=crop&crop=faces"></div>
+  </div>
+  <div class="media-block__content">
+    <div class="text-block text-block--tertiary text-block--width-auto">
+      <p>“While most bootcamps have been focusing on expanding and enrolling more students, we’ve invested a tremendous amount of time in understanding how people learn effectively… Learn, our proprietary platform, is the earliest manifestation of that.”</p>
+
+    </div>
+    <ul class="util--hide-small util--hide-mobile horizontal-list horizontal-list--slashed util--margin-tl">
+      <li>
+        <h3 class="heading heading--level-3 heading--font-size-smaller heading--color-lighter">Avi Flombaum</h3>
+      </li>
+      <li>
+        <span class="util--font-size-3 util--color-grey-light util--align-sub">
+          Co-Founder & Dean
+        </span>
+      </li>
+    </ul>
+    <ul class="util--hide-large util--hide-medium list list--spacing-none util--margin-tl">
+      <li>
+        <h3 class="heading heading--level-3 heading--font-size-smaller heading--color-lighter">Avi Flombaum</h3>
+      </li>
+      <li>
+        <span class="util--font-size-3 util--color-grey-light util--align-sub">
+          Co-Founder & Dean
+        </span>
+      </li>
+    </ul>
+    <div class="util--margin-tl">
+      <a href="https://www.quora.com/How-is-the-Flatiron-School-different-from-other-Programming-Bootcamps" target="_blank" class="cta-link cta-link--secondary cta-link--colors-grey-light">
+        Read full post on
+        <svg height="19" width="48">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/sprite.svg#svg__quora-logo"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>
+
+                
+
+                
+
+                
+              </div>
+            </li>
+          
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+</section>
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+    <a name="who-attends"></a>
+
+<section class="level level--flush-bottom">
+
+  <div class="level__inner">
+
+    <div class="row">
+      
+      <div class="module module--margin-top-larger module--margin-bottom-larger">
+        <div class="module__body">
+          <div class="text-block text-block--primary util--pull-center text-block--centered">
+            
+              <h1>What Kind of People Attend Flatiron&nbsp;School?</h1>
+            
+            
+              <p><p>Our students range from mathemeticians to poets. McKinsey consultants to Broadway dancers. Investment bankers to major league athletes.  Harvard PhD’s to college dropouts. What they share is a determined, fearless approach to life and learning. As developers, their life experiences broaden their perspective, making them even more valuable team members — and leaders.</p>
+</p>
+            
+          </div>
+
+          
+
+          <ul class="list util--text-align-c util--padding-tl util--margin-bl">
+
+            
+  <li>
+    
+      <a class="cta-link heading--font-size-larger" href="/hire-our-grads/">
+        
+        <span">
+          Hire Our Grads
+        </span>
+        <span class="util--hide-mobile util--hide-small util--hide-medium util--hide-large">
+          
+        </span>
+      </a>
+    
+  </li>
+
+
+
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+
+    
+  <div class="row util--show-small-up">
+
+  <!-- For large sizes: Flex grid -->
+  
+
+  
+  
+  
+
+  <div class="module">
+    
+    <div class="module__head">
+      <h3 class="heading heading--level-3 util--text-align-c util--margin-bl">Meet a few of our graduates</h3>
+      
+    </div>
+
+    <div class="module__body">
+
+      <div class="flex-grid util--margin-nbm" data-allowed-cols="
+        
+        
+          
+            three
+          
+        
+        
+          two
+        
+        one
+      ">
+        <ul class="flex-grid__list">
+          
+            <li>
+              <div class="module module--margin-bottom-large">
+                
+                <div class="module__head">
+        
+                  
+                    <div class="imgix-frame imgix-frame--ratio-short imgix-fluid imgix-fluid-bg" data-src="https://flatironschool.imgix.net/headshots/student-shana-moore-v2.jpg?fit=crop"></div>
+                  
+
+                </div>
+                
+                <div class="module__body util--padding-tm">
+                  <h2 class="heading heading--level-2 heading--font-size-larger">Shana Moore: Software Engineer at Qualcomm</h2>
+                  
+                    <h2 class="heading heading--level-3 heading--font-size-smaller heading--weight-lighter heading--color-lighter util--margin-ts">Flatiron Online Graduate, 2016</h2>
+                  
+                </div>
+                
+                <div class="module__foot">
+                  <div class="text-block text-block--secondary">
+                    <ul>
+  <li>Co-Founder, Girl Develop It San Diego</li>
+  <li>Human Development major and former government contractor admin</li>
+  <li>Shana’s <a href="https://github.com/shanalmoore">GitHub</a></li>
+</ul>
+
+                  </div>
+                </div>
+                
+                
+                
+                  <div class="module__foot">
+                    <a href="http://blog.flatironschool.com/flatiron-alumna-shana-moore-on-changing-careers-after-its-too-late/" target="_blank" class="cta-link cta-link--secondary cta-link--colors-grey">Read Student Story</a>
+                  </div>
+                
+            </li>
+          
+            <li>
+              <div class="module module--margin-bottom-large">
+                
+                <div class="module__head">
+        
+                  
+                    <div class="imgix-frame imgix-frame--ratio-short imgix-fluid imgix-fluid-bg" data-src="https://flatironschool.imgix.net/headshots/student-william-jeffries.jpg?fit=crop"></div>
+                  
+
+                </div>
+                
+                <div class="module__body util--padding-tm">
+                  <h2 class="heading heading--level-2 heading--font-size-larger">William Jeffries: Chief Technology Officer, Heatseek</h2>
+                  
+                    <h2 class="heading heading--level-3 heading--font-size-smaller heading--weight-lighter heading--color-lighter util--margin-ts">Flatiron NYC Graduate, 2014</h2>
+                  
+                </div>
+                
+                <div class="module__foot">
+                  <div class="text-block text-block--secondary">
+                    <ul>
+  <li>Startup entrepreneur helping low-income New Yorkers stay warm</li>
+  <li>Formerly an accountant at PwC</li>
+  <li>Will’s <a href="https://github.com/williamcodes">GitHub</a></li>
+</ul>
+
+                  </div>
+                </div>
+                
+                
+                
+                  <div class="module__foot">
+                    <a href="https://medium.com/@FlatironSchool/heat-seek-nyc-aims-to-keep-the-city-warm-with-code-d1da5d2a2641#.47ka322i5" target="_blank" class="cta-link cta-link--secondary cta-link--colors-grey">Read Student Story</a>
+                  </div>
+                
+            </li>
+          
+            <li>
+              <div class="module module--margin-bottom-large">
+                
+                <div class="module__head">
+        
+                  
+                    <div class="imgix-frame imgix-frame--ratio-short imgix-fluid imgix-fluid-bg" data-src="https://flatironschool.imgix.net/homepage/student-suma-redy.jpg?fit=crop"></div>
+                  
+
+                </div>
+                
+                <div class="module__body util--padding-tm">
+                  <h2 class="heading heading--level-2 heading--font-size-larger">Suma Reddy: Founder of Waddle</h2>
+                  
+                    <h2 class="heading heading--level-3 heading--font-size-smaller heading--weight-lighter heading--color-lighter util--margin-ts">Flatiron NYC Graduate, 2014</h2>
+                  
+                </div>
+                
+                <div class="module__foot">
+                  <div class="text-block text-block--secondary">
+                    <ul>
+  <li>Managing Partner at Akula Energy Ventures</li>
+  <li>NYC Co-director of Lesbians Who Tech</li>
+  <li>Presented her company’s beta app at the White House</li>
+  <li>Former Peace Corps; Econ major</li>
+</ul>
+
+                  </div>
+                </div>
+                
+                
+                
+                  <div class="module__foot">
+                    <a href="http://blog.flatironschool.com/how-suma-reddy-went-from-flatiron-school-to-the-white-house/" target="_blank" class="cta-link cta-link--secondary cta-link--colors-grey">Read Student Story</a>
+                  </div>
+                
+            </li>
+          
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+
+<!-- For non-large sizes: Carousel -->
+
+<div class="row util--show-mobile">
+  <div class="module module--outdent">
+
+  <h3 class="heading heading--level-3 util--text-align-c util--margin-bl">Meet a few of our graduates</h3>
+  
+
+    <div class="module__body">
+
+
+      <div class="carousel js--carousel">
+
+        <a href="#" class="carousel__arrow" data-side="left" rel="carousel" data-action="goToPrev">
+          <svg height="48" width="24">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/sprite.svg#svg__caret--left--thin"></use>
+          </svg>
+        </a>
+
+        <a href="#" class="carousel__arrow" data-side="right" rel="carousel" data-action="goToNext">
+          <svg height="48" width="24">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/sprite.svg#svg__caret--right--thin"></use>
+          </svg>
+        </a>
+        
+        <div class="carousel__inner">
+          <ul class="carousel__list">
+            
+            <li class="carousel__list__item" state-active="true">
+              <div class="module">
+                
+                <div class="module__head">
+        
+                  
+                    <div class="imgix-frame imgix-frame--ratio-short imgix-fluid imgix-fluid-bg" data-src="https://flatironschool.imgix.net/headshots/student-shana-moore-v2.jpg?fit=crop"></div>
+                  
+
+                </div>
+                
+                <div class="module__body util--text-align-c util--padding-tm">
+                  <h2 class="heading heading--level-2 heading--font-size-larger">Shana Moore: Software Engineer at Qualcomm</h2>
+                  
+                    <h2 class="heading heading--level-3 heading--font-size-smaller heading--weight-lighter heading--color-lighter util--margin-ts">Flatiron Online Graduate, 2016</h2>
+                  
+                </div>
+                <div class="module__foot">
+                  
+                  <div class="text-block text-block--secondary util--pull-center">
+                  <ul>
+  <li>Co-Founder, Girl Develop It San Diego</li>
+  <li>Human Development major and former government contractor admin</li>
+  <li>Shana’s <a href="https://github.com/shanalmoore">GitHub</a></li>
+</ul>
+
+                  </div>
+                  
+                </div>
+                
+                
+                  <div class="module__foot">
+                    <a href="http://blog.flatironschool.com/flatiron-alumna-shana-moore-on-changing-careers-after-its-too-late/" target="_blank" class="cta-link cta-link--secondary cta-link--colors-grey">Read Student Story</a>
+                  </div>
+                
+              </div>
+            </li>
+            
+            <li class="carousel__list__item">
+              <div class="module">
+                
+                <div class="module__head">
+        
+                  
+                    <div class="imgix-frame imgix-frame--ratio-short imgix-fluid imgix-fluid-bg" data-src="https://flatironschool.imgix.net/headshots/student-william-jeffries.jpg?fit=crop"></div>
+                  
+
+                </div>
+                
+                <div class="module__body util--text-align-c util--padding-tm">
+                  <h2 class="heading heading--level-2 heading--font-size-larger">William Jeffries: Chief Technology Officer, Heatseek</h2>
+                  
+                    <h2 class="heading heading--level-3 heading--font-size-smaller heading--weight-lighter heading--color-lighter util--margin-ts">Flatiron NYC Graduate, 2014</h2>
+                  
+                </div>
+                <div class="module__foot">
+                  
+                  <div class="text-block text-block--secondary util--pull-center">
+                  <ul>
+  <li>Startup entrepreneur helping low-income New Yorkers stay warm</li>
+  <li>Formerly an accountant at PwC</li>
+  <li>Will’s <a href="https://github.com/williamcodes">GitHub</a></li>
+</ul>
+
+                  </div>
+                  
+                </div>
+                
+                
+                  <div class="module__foot">
+                    <a href="https://medium.com/@FlatironSchool/heat-seek-nyc-aims-to-keep-the-city-warm-with-code-d1da5d2a2641#.47ka322i5" target="_blank" class="cta-link cta-link--secondary cta-link--colors-grey">Read Student Story</a>
+                  </div>
+                
+              </div>
+            </li>
+            
+            <li class="carousel__list__item">
+              <div class="module">
+                
+                <div class="module__head">
+        
+                  
+                    <div class="imgix-frame imgix-frame--ratio-short imgix-fluid imgix-fluid-bg" data-src="https://flatironschool.imgix.net/homepage/student-suma-redy.jpg?fit=crop"></div>
+                  
+
+                </div>
+                
+                <div class="module__body util--text-align-c util--padding-tm">
+                  <h2 class="heading heading--level-2 heading--font-size-larger">Suma Reddy: Founder of Waddle</h2>
+                  
+                    <h2 class="heading heading--level-3 heading--font-size-smaller heading--weight-lighter heading--color-lighter util--margin-ts">Flatiron NYC Graduate, 2014</h2>
+                  
+                </div>
+                <div class="module__foot">
+                  
+                  <div class="text-block text-block--secondary util--pull-center">
+                  <ul>
+  <li>Managing Partner at Akula Energy Ventures</li>
+  <li>NYC Co-director of Lesbians Who Tech</li>
+  <li>Presented her company’s beta app at the White House</li>
+  <li>Former Peace Corps; Econ major</li>
+</ul>
+
+                  </div>
+                  
+                </div>
+                
+                
+                  <div class="module__foot">
+                    <a href="http://blog.flatironschool.com/how-suma-reddy-went-from-flatiron-school-to-the-white-house/" target="_blank" class="cta-link cta-link--secondary cta-link--colors-grey">Read Student Story</a>
+                  </div>
+                
+              </div>
+            </li>
+            
+          </ul>
+        </div>
+        
+        <ul class="carousel__dots">
+          
+            <li>
+              <a href="#" class="carousel__dots__dot" state-active="true" rel="carousel" data-action="goToIndex" data-target="0"></a>
+            </li>
+          
+            <li>
+              <a href="#" class="carousel__dots__dot" rel="carousel" data-action="goToIndex" data-target="1"></a>
+            </li>
+          
+            <li>
+              <a href="#" class="carousel__dots__dot" rel="carousel" data-action="goToIndex" data-target="2"></a>
+            </li>
+          
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+</section>
+
+
+<section class="level level--flush-bottom level--border-bottom-thick">
+  <div class="level__inner">
+    <!-- Mobile Version -->
+
+  
+    <div class="row util--hide-medium util--hide-large">
+      <div class="module module--flush-bottom">
+        <div class="module__body">
+          <div class="flex-grid flex-grid--border-top" data-allowed-cols="one">
+            <ul class="flex-grid__list">
+              <li>
+                <div class="module">
+                  
+
+                  
+
+                  
+                    <div class="media-block media-block--media-width-4 media-block--alignment-top">
+  <div class="media-block__media">
+    <div class="imgix-frame imgix-frame--ratio-square imgix-frame--circular imgix-fluid imgix-fluid-bg" data-src="https://flatironschool.imgix.net/headshots/sam-van-tran.jpg?fit=crop&crop=faces"></div>
+  </div>
+  <div class="media-block__content">
+    <div class="text-block text-block--tertiary text-block--width-auto">
+      <p>“My boss used to say, ‘In life, you’re either selling something or you’re building something.’ Now I get to build. Thank you, Flatiron School.”</p>
+
+    </div>
+    <ul class="util--hide-small util--hide-mobile horizontal-list horizontal-list--slashed util--margin-tl">
+      <li>
+        <h3 class="heading heading--level-3 heading--font-size-smaller heading--color-lighter">Sam Van Tran</h3>
+      </li>
+      <li>
+        <span class="util--font-size-3 util--color-grey-light util--align-sub">
+          Flatiron Graduate
+        </span>
+      </li>
+    </ul>
+    <ul class="util--hide-large util--hide-medium list list--spacing-none util--margin-tl">
+      <li>
+        <h3 class="heading heading--level-3 heading--font-size-smaller heading--color-lighter">Sam Van Tran</h3>
+      </li>
+      <li>
+        <span class="util--font-size-3 util--color-grey-light util--align-sub">
+          Flatiron Graduate
+        </span>
+      </li>
+    </ul>
+    <div class="util--margin-tl">
+      <a href="https://www.quora.com/What-is-your-review-of-Flatiron-School" target="_blank" class="cta-link cta-link--secondary cta-link--colors-grey-light">
+        Read full post on
+        <svg height="19" width="48">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/sprite.svg#svg__quora-logo"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>
+
+                  
+
+                  
+
+                  
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+  
+
+
+<div class="row util--show-medium-up">
+  <div class="module module--flush-bottom">
+    <div class="module__body">
+      <div class="flex-grid flex-grid--border-top" data-allowed-cols="two one">
+        <ul class="flex-grid__list">
+
+          
+            <li>
+              <div class="module module--margin-large">
+                
+
+                
+
+                
+                  <div class="media-block media-block--media-width-4 media-block--alignment-top">
+  <div class="media-block__media">
+    <div class="imgix-frame imgix-frame--ratio-square imgix-frame--circular imgix-fluid imgix-fluid-bg" data-src="https://flatironschool.imgix.net/headshots/sam-van-tran.jpg?fit=crop&crop=faces"></div>
+  </div>
+  <div class="media-block__content">
+    <div class="text-block text-block--tertiary text-block--width-auto">
+      <p>“My boss used to say, ‘In life, you’re either selling something or you’re building something.’ Now I get to build. Thank you, Flatiron School.”</p>
+
+    </div>
+    <ul class="util--hide-small util--hide-mobile horizontal-list horizontal-list--slashed util--margin-tl">
+      <li>
+        <h3 class="heading heading--level-3 heading--font-size-smaller heading--color-lighter">Sam Van Tran</h3>
+      </li>
+      <li>
+        <span class="util--font-size-3 util--color-grey-light util--align-sub">
+          Flatiron Graduate
+        </span>
+      </li>
+    </ul>
+    <ul class="util--hide-large util--hide-medium list list--spacing-none util--margin-tl">
+      <li>
+        <h3 class="heading heading--level-3 heading--font-size-smaller heading--color-lighter">Sam Van Tran</h3>
+      </li>
+      <li>
+        <span class="util--font-size-3 util--color-grey-light util--align-sub">
+          Flatiron Graduate
+        </span>
+      </li>
+    </ul>
+    <div class="util--margin-tl">
+      <a href="https://www.quora.com/What-is-your-review-of-Flatiron-School" target="_blank" class="cta-link cta-link--secondary cta-link--colors-grey-light">
+        Read full post on
+        <svg height="19" width="48">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/sprite.svg#svg__quora-logo"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>
+
+                
+
+                
+
+                
+              </div>
+            </li>
+          
+            <li>
+              <div class="module module--margin-large">
+                
+
+                
+
+                
+
+                
+
+                
+                  <div class="text-block text-block--tertiary">
+  <p><strong>Rachel L. Swarns</strong>: “In an industry that is mostly white and mostly male, [Flatiron] fellows were strikingly diverse. Of the 28 people selected, 16 were women and 14 were minorities, city officials say. Nine were African-American. Eleven of the students were unemployed when they started the course in October. Four didn’t have college degrees.</p>
+
+<p>‘It was hard as hell,’ Ms. Eady said.”</p>
+
+</div>
+
+<div class="util--margin-tl">
+  <img srcset="https://flatironschool.imgix.net/logos/nytimes.png?h=64&w=192&fit=max 1x, https://flatironschool.imgix.net/logos/nytimes.png?h=48&w=192&dpr=2&fit=max 2x" src="https://flatironschool.imgix.net/logos/nytimes.png?h=48&w=128&fit=max" />
+</div>
+
+<div class="util--margin-tl">
+  <a href="http://www.nytimes.com/2014/06/23/nyregion/flatiron-school-program-expands-new-yorks-web-developer-ranks.html?_r=0" target="_blank" class="cta-link cta-link--secondary cta-link--colors-grey-light">Read full article</a>
+</div>
+
+                
+              </div>
+            </li>
+          
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+</section>
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+    <a name="best-training"></a>
+
+<section class="level level--flush-bottom">
+
+  <div class="level__inner">
+
+    <div class="row">
+      
+      <div class="module module--margin-top-larger module--margin-bottom-larger">
+        <div class="module__body">
+          <div class="text-block text-block--primary util--pull-center text-block--centered">
+            
+              <h1>Rigorous, Industry-Aligned&nbsp;Curriculum</h1>
+            
+            
+              <p><p>On campus or online, Flatiron students receive an uncompromising education in programming, with rigorous but rewarding coursework that simulates the challenging responsibilities of a real-world developer. Since our inaugural class in 2012, we have continually honed our curricula to graduate engineers who are ready to hit the ground running at top employers like Google, ESPN, NASA and Spotify.</p>
+</p>
+            
+          </div>
+
+          
+            
+              <div class="image-frame">
+              </div>  
+                <img class="image-frame__image" src="https://flatironschool.imgix.net/homepage/logo-grid-3x2.png" alt="">
+              </div>
+            
+          
+
+          <ul class="list util--text-align-c util--padding-tl util--margin-bl">
+
+            
+  <li>
+    
+      <a class="cta-link cta-link--has-icon heading--font-size-larger" href="/hire-our-grads">
+        
+          <svg class="cta-link--has-icon__icon">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/sprite.svg#svg__icon--city"></use>
+          </svg>
+        
+        <span class="util--hide-mobile">
+          Work With Us
+        </span>
+        <span class=" util--hide-small util--hide-medium util--hide-large">
+          Work With Us
+        </span>
+      </a>
+    
+  </li>
+
+
+
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+</section>
+
+
+<section class="level level--flush-bottom level--border-bottom-thick">
+  <div class="level__inner">
+    <!-- Mobile Version -->
+
+  
+    <div class="row util--hide-medium util--hide-large">
+      <div class="module module--flush-bottom">
+        <div class="module__body">
+          <div class="flex-grid flex-grid--border-top" data-allowed-cols="one">
+            <ul class="flex-grid__list">
+              <li>
+                <div class="module">
+                  
+
+                  
+
+                  
+                    <div class="media-block media-block--media-width-4 media-block--alignment-top">
+  <div class="media-block__media">
+    <div class="imgix-frame imgix-frame--ratio-square imgix-frame--circular imgix-fluid imgix-fluid-bg" data-src="https://flatironschool.imgix.net/headshots/student-shushanth-bhaskarabhatla.jpg?fit=crop&crop=faces"></div>
+  </div>
+  <div class="media-block__content">
+    <div class="text-block text-block--tertiary text-block--width-auto">
+      <p>“The learning experience at Flatiron was very rigorous and I really appreciated the emphasis on solid fundamentals. Coding bootcamps are often criticized for producing graduates that can build whip together [sic] applications… but lack a deeper understanding of web development. I can assure you Flatiron School does not do this.”</p>
+
+    </div>
+    <ul class="util--hide-small util--hide-mobile horizontal-list horizontal-list--slashed util--margin-tl">
+      <li>
+        <h3 class="heading heading--level-3 heading--font-size-smaller heading--color-lighter">Sushanth B.</h3>
+      </li>
+      <li>
+        <span class="util--font-size-3 util--color-grey-light util--align-sub">
+          Founder of carla.io
+        </span>
+      </li>
+    </ul>
+    <ul class="util--hide-large util--hide-medium list list--spacing-none util--margin-tl">
+      <li>
+        <h3 class="heading heading--level-3 heading--font-size-smaller heading--color-lighter">Sushanth B.</h3>
+      </li>
+      <li>
+        <span class="util--font-size-3 util--color-grey-light util--align-sub">
+          Founder of carla.io
+        </span>
+      </li>
+    </ul>
+    <div class="util--margin-tl">
+      <a href="https://www.quora.com/What-is-your-review-of-Flatiron-School" target="_blank" class="cta-link cta-link--secondary cta-link--colors-grey-light">
+        Read full post on
+        <svg height="19" width="48">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/sprite.svg#svg__quora-logo"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>
+
+                  
+
+                  
+
+                  
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+  
+
+
+<div class="row util--show-medium-up">
+  <div class="module module--flush-bottom">
+    <div class="module__body">
+      <div class="flex-grid flex-grid--border-top" data-allowed-cols="two one">
+        <ul class="flex-grid__list">
+
+          
+            <li>
+              <div class="module module--margin-large">
+                
+
+                
+
+                
+                  <div class="media-block media-block--media-width-4 media-block--alignment-top">
+  <div class="media-block__media">
+    <div class="imgix-frame imgix-frame--ratio-square imgix-frame--circular imgix-fluid imgix-fluid-bg" data-src="https://flatironschool.imgix.net/headshots/student-shushanth-bhaskarabhatla.jpg?fit=crop&crop=faces"></div>
+  </div>
+  <div class="media-block__content">
+    <div class="text-block text-block--tertiary text-block--width-auto">
+      <p>“The learning experience at Flatiron was very rigorous and I really appreciated the emphasis on solid fundamentals. Coding bootcamps are often criticized for producing graduates that can build whip together [sic] applications… but lack a deeper understanding of web development. I can assure you Flatiron School does not do this.”</p>
+
+    </div>
+    <ul class="util--hide-small util--hide-mobile horizontal-list horizontal-list--slashed util--margin-tl">
+      <li>
+        <h3 class="heading heading--level-3 heading--font-size-smaller heading--color-lighter">Sushanth B.</h3>
+      </li>
+      <li>
+        <span class="util--font-size-3 util--color-grey-light util--align-sub">
+          Founder of carla.io
+        </span>
+      </li>
+    </ul>
+    <ul class="util--hide-large util--hide-medium list list--spacing-none util--margin-tl">
+      <li>
+        <h3 class="heading heading--level-3 heading--font-size-smaller heading--color-lighter">Sushanth B.</h3>
+      </li>
+      <li>
+        <span class="util--font-size-3 util--color-grey-light util--align-sub">
+          Founder of carla.io
+        </span>
+      </li>
+    </ul>
+    <div class="util--margin-tl">
+      <a href="https://www.quora.com/What-is-your-review-of-Flatiron-School" target="_blank" class="cta-link cta-link--secondary cta-link--colors-grey-light">
+        Read full post on
+        <svg height="19" width="48">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/sprite.svg#svg__quora-logo"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>
+
+                
+
+                
+
+                
+              </div>
+            </li>
+          
+            <li>
+              <div class="module module--margin-large">
+                
+
+                
+
+                
+
+                
+
+                
+                  <div class="text-block text-block--tertiary">
+  <p><strong>Van Jones</strong>: “This is a tough, rigorous program – not for the faint of heart. It is an intensive 22-week course – designed to get people ready for careers in a highly-competitive field… if history is any guide, the Fellowship will produce a class of creative, innovative programmers that companies cannot wait to snap up.”</p>
+
+</div>
+
+<div class="util--margin-tl">
+  <img srcset="https://flatironschool.imgix.net/logos/usa-today.png?h=64&w=192&fit=max 1x, https://flatironschool.imgix.net/logos/usa-today.png?h=48&w=192&dpr=2&fit=max 2x" src="https://flatironschool.imgix.net/logos/usa-today.png?h=48&w=128&fit=max" />
+</div>
+
+<div class="util--margin-tl">
+  <a href="http://www.usatoday.com/story/tech/columnist/2014/11/26/van-jones-yeswecode-silicon-valley-diversity-nyc-web-development-project/70103542/" target="_blank" class="cta-link cta-link--secondary cta-link--colors-grey-light">Read full article</a>
+</div>
+
+                
+              </div>
+            </li>
+          
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+</section>
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+<!-- Small sizes: Show cta list -->
+<section class="level level--bg-color-grey-faintest  level--border-bottom-thick util--hide-medium util--hide-large">
+  <div class="level__inner">
+    <div class="module util--text-align-c">
+      <ul class="list list--spacing-large">
+        
+          <li>
+            <a class="cta-link cta-link--has-icon" href="/program-types/career-change">
+              <svg class="cta-link--has-icon__icon" fill="#999" width="16" height="16">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/sprite.svg#svg__icon--graduation"></use>
+              </svg>
+              Become a Professional Developer
+            </a>
+          </li>
+        
+          <li>
+            <a class="cta-link cta-link--has-icon" href="/program-types/certificate">
+              <svg class="cta-link--has-icon__icon" fill="#999" width="16" height="16">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/sprite.svg#svg__icon--passion"></use>
+              </svg>
+              Expand your Development Skills
+            </a>
+          </li>
+        
+          <li>
+            <a class="cta-link cta-link--has-icon" href="/program-types/free">
+              <svg class="cta-link--has-icon__icon" fill="#999" width="16" height="16">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/sprite.svg#svg__icon--computer"></use>
+              </svg>
+              Learn Programming Basics for Free
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Medium sizes: Show grid -->
+<section class="level level--bg-color-grey-faintest  level--border-bottom-thick level--vertical-padding-none util--show-medium-up">
+  <div class="level__inner">
+    
+    <div class="flex-grid flex-grid--spacing-larger" data-allowed-cols="one three">
+      <ul class="flex-grid__list">
+        
+        <li>
+          <div class="module module--margin-top-large module--margin-bottom-large util--text-align-c">
+            <div class="module__head">
+              <svg fill="#999" width="64px" height="64px">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/sprite.svg#svg__icon--graduation"></use>
+              </svg>
+            </div>
+            <div class="module__body">
+              <a class="cta-link" href="/program-types/career-change">
+                <span class="util--show-medium">
+                  Become a Developer
+                </span>
+                <span class="util--show-large-up">
+                  Become a Professional Developer
+                </span>
+              </a>
+            </div>
+            <div class="module__foot util--show-small-up">
+              <div class="text-block text-block--colors-lighter">
+                We offer Career Courses designed to take passionate people and turn them into amazing developers.
+              </div>
+            </div>
+          </div>
+        </li>
+        
+        <li>
+          <div class="module module--margin-top-large module--margin-bottom-large util--text-align-c">
+            <div class="module__head">
+              <svg fill="#999" width="64px" height="64px">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/sprite.svg#svg__icon--passion"></use>
+              </svg>
+            </div>
+            <div class="module__body">
+              <a class="cta-link" href="/program-types/certificate">
+                <span class="util--show-medium">
+                  Expand your Skills
+                </span>
+                <span class="util--show-large-up">
+                  Expand your Development Skills
+                </span>
+              </a>
+            </div>
+            <div class="module__foot util--show-small-up">
+              <div class="text-block text-block--colors-lighter">
+                Our Certificate Courses allow people of various skill levels to expand their skill set.
+              </div>
+            </div>
+          </div>
+        </li>
+        
+        <li>
+          <div class="module module--margin-top-large module--margin-bottom-large util--text-align-c">
+            <div class="module__head">
+              <svg fill="#999" width="64px" height="64px">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/sprite.svg#svg__icon--computer"></use>
+              </svg>
+            </div>
+            <div class="module__body">
+              <a class="cta-link" href="/program-types/free">
+                <span class="util--show-medium">
+                  Learn for Free
+                </span>
+                <span class="util--show-large-up">
+                  Learn Programming Basics for Free
+                </span>
+              </a>
+            </div>
+            <div class="module__foot util--show-small-up">
+              <div class="text-block text-block--colors-lighter">
+                Designed for beginners, our free intro classes get you up to speed on core web development topics.
+              </div>
+            </div>
+          </div>
+        </li>
+        
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+
+
+    </section>
+
+    <footer class="site-footer">
+  <div class="site-footer__inner">
+    
+    <div class="row">
+      <div class="module module--margin-bottom-large">
+        <div class="module__body">
+
+          <ul class="list util--hide-medium util--hide-large">
+            <li><a class="cta-link cta-link--colors-grey-faint" href="tel:1 (888) 958-0569">1 (888) 958-0569</a></li>
+            <li><a class="cta-link cta-link--colors-grey-faint js--obscure-mailto" data-address="info AT flatironschool DOT com"></a></li>
+            <li><a class="cta-link cta-link--colors-grey-faint" target="_blank" href="https://www.google.com/maps?q=11+Broadway,+Suite+260,+New+York,+NY+10004&um=1&ie=UTF-8&sa=X&ved=0ahUKEwiZ153Oi5nNAhXDCh4KHfK8DMkQ_AUICCgB
+">11 Broadway, 2nd Floor,
+New York, NY 10004
+</a></li>
+          </ul>
+
+          <ul class="horizontal-list horizontal-list--slashed horizontal-list--slashed--height-taller horizontal-list--slashed--slash-color-white site-footer__primary-nav util--show-medium-up">
+            <li><a class="cta-link cta-link--colors-grey-faint" href="tel:1 (888) 958-0569">1 (888) 958-0569</a></li>
+            <li><a class="cta-link cta-link--colors-grey-faint js--obscure-mailto" data-address="info AT flatironschool DOT com"></a></li>
+            <li><a class="cta-link cta-link--colors-grey-faint" target="_blank" href="https://www.google.com/maps?q=11+Broadway,+Suite+260,+New+York,+NY+10004&um=1&ie=UTF-8&sa=X&ved=0ahUKEwiZ153Oi5nNAhXDCh4KHfK8DMkQ_AUICCgB
+">11 Broadway, 2nd Floor,
+New York, NY 10004
+</a></li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="module module--margin-bottom-large">
+        <div class="module__body">
+          <ul class="horizontal-list horizontal-list--spacing-large">
+            
+              <li>
+                <a target="_blank" href="https://www.facebook.com/FlatironSchool/" class="site-footer__social-link" data-network="facebook">
+                  <svg>
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/sprite.svg#svg__icon--facebook"></use>
+                  </svg>
+                </a>
+              </li>
+            
+              <li>
+                <a target="_blank" href="https://twitter.com/flatironschool" class="site-footer__social-link" data-network="twitter">
+                  <svg>
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/sprite.svg#svg__icon--twitter"></use>
+                  </svg>
+                </a>
+              </li>
+            
+              <li>
+                <a target="_blank" href="https://www.instagram.com/flatironschool/" class="site-footer__social-link" data-network="instagram">
+                  <svg>
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/sprite.svg#svg__icon--instagram"></use>
+                  </svg>
+                </a>
+              </li>
+            
+              <li>
+                <a target="_blank" href="https://github.com/flatiron-school" class="site-footer__social-link" data-network="github">
+                  <svg>
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/sprite.svg#svg__icon--github"></use>
+                  </svg>
+                </a>
+              </li>
+            
+              <li>
+                <a target="_blank" href="http://www.quora.com/Flatiron-School" class="site-footer__social-link" data-network="quora">
+                  <svg>
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/sprite.svg#svg__icon--quora"></use>
+                  </svg>
+                </a>
+              </li>
+            
+              <li>
+                <a target="_blank" href="https://medium.com/learn-love-code" class="site-footer__social-link" data-network="medium">
+                  <svg>
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/sprite.svg#svg__icon--medium"></use>
+                  </svg>
+                </a>
+              </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="module">
+        <div class="module__body">
+          <ul class="list site-footer__secondary-nav">
+            
+              <li>
+
+                
+                
+                  <a class="cta-link cta-link--secondary cta-link--colors-grey-light js--obscure-mailto" data-address="press AT flatironschool DOT com
+" data-text="Press Inquiries: press AT flatironschool DOT com
+"></a>
+
+                
+
+              </li>
+            
+              <li>
+
+                
+                
+                  <a
+                    class="cta-link cta-link--secondary cta-link--colors-grey-light" href="/about-us#join-us"
+                    
+                  >
+                    Careers at Flatiron School
+                    
+                  </a>
+                
+                
+
+              </li>
+            
+              <li>
+
+                
+                
+                  <a
+                    class="cta-link cta-link--secondary cta-link--colors-grey-light" href="http://blog.flatironschool.com"
+                    
+                      target="_blank"
+                    
+                  >
+                    Blog
+                    
+                      <svg class="site-footer__secondary-nav__icon-external"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/sprite.svg#svg__icon--external"></use></svg>
+                    
+                  </a>
+                
+                
+
+              </li>
+            
+              <li>
+
+                
+                
+                  <a
+                    class="cta-link cta-link--secondary cta-link--colors-grey-light" href="http://blog.flatironschool.com/category/alumni/"
+                    
+                      target="_blank"
+                    
+                  >
+                    Our Alumni
+                    
+                      <svg class="site-footer__secondary-nav__icon-external"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/sprite.svg#svg__icon--external"></use></svg>
+                    
+                  </a>
+                
+                
+
+              </li>
+            
+              <li>
+
+                
+                
+                  <a
+                    class="cta-link cta-link--secondary cta-link--colors-grey-light" href="/sitemap.xml"
+                    
+                  >
+                    Sitemap
+                    
+                  </a>
+                
+                
+
+              </li>
+            
+              <li>
+
+                
+                
+                  <a
+                    class="cta-link cta-link--secondary cta-link--colors-grey-light" href="/privacy-policy/"
+                    
+                  >
+                    Privacy Policy
+                    
+                  </a>
+                
+                
+
+              </li>
+            
+              <li>
+
+                
+                
+                  <a
+                    class="cta-link cta-link--secondary cta-link--colors-grey-light" href="http://learn.co/tos"
+                    
+                  >
+                    Learn.co Terms of Service
+                    
+                  </a>
+                
+                
+
+              </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="module site-footer__copyright">
+      © 2016 Flatiron School. Made in NYC.
+    </div>
+
+  </div>
+</footer>
+
+<!-- Video Blocks -->
+
+<script type="text/template" id="js-template__video-block">
+  <% if( obj.poster ) { %>
+    <div class="video-block__poster imgix imgix-fluid" data-src="<%= layer.video.poster %>"></div>
+  <% }
+  <video class="video-block__video">
+    <% _.each(sources, function( source ) { %>
+      <source src="<%= source.src %>" type="<%= source.type %>">
+    <% }); %>
+  </video>
+</script>
+
+
+<!-- Delayed-load videos -->
+
+<script type="text/template" id="js-template__delayed-video">
+  <% _.each(sources, function( source ) { %>
+    <source src="<%= source.src %>" type="<%= source.type %>">
+  <% }); %>
+</script>
+
+<!--
+
+  Site Overlay Templates
+
+-->
+
+
+<!-- Main Template -->
+
+<script type="text/template" id="js-template__site-overlay">
+  <a class="site-overlay__close" href="#" data-target="overlay" data-params='{ "type" : null }'>
+    <svg>
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/sprite.svg#svg__close-x"></use>
+    </svg>
+  </a>
+  
+  <% if (obj.background) { %>
+    <div class="site-overlay__background imgix-fluid imgix-fluid-bg" data-src="<%= background %>?fit=crop"></div>
+  <% } %>
+  
+  <div class="site-overlay__inner"></div>
+</script>
+
+
+<!-- Program Trial Template -->
+
+<script type="text/template" id="js-template__site-overlay-inner--program">
+  <div class="site-overlay__wrapper">
+    <h2 class="site-overlay__headline"><%= headline %></h2>
+    <% if( obj.subhead ) { %>
+      <h3 class="site-overlay__subhead"><%= subhead %></h2>
+    <% } %>
+    <% if( obj.metadata ) { %>
+      <div class="site-overlay__metadata">
+        <ul class="util--hide-medium util--hide-large list">
+          <% _.each(metadata, function(metadatum) { %>
+            <li>
+              <%= metadatum %>
+            </li>
+          <% }) %>
+        </ul>
+        <ul class="util--show-medium-up horizontal-list horizontal-list--slashed horizontal-list--slashed--slash-color-white horizontal-list--display-inline">
+          <% _.each(metadata, function(metadatum) { %>
+            <li>
+              <%= metadatum %>
+            </li>
+          <% }) %>
+        </ul>
+      </div>
+    <% } %>
+    <div class="site-overlay__flow">
+      <ul class="site-overlay__flow__list">
+        <% _.each(flow, function(item) { %>
+          <li class="site-overlay__flow__list__item">
+            <svg class="site-overlay__flow__list__item__icon">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/sprite.svg#svg__<%= item.icon %>"></use>
+            </svg>
+            <div class="site-overlay__flow__list__item__text">
+              <% if( item.text_touch ) { %>
+                <span class="util--show-touch"><%= item.text_touch %></span>
+                <span class="util--hide-touch"><%= item.text %></span>
+              <% } else { %>
+                <%= item.text %>
+              <% } %>
+            </div>
+          </li>
+        <% }) %>
+      </ul>
+      <% if(obj.career_course_trapdoor && career_course_trapdoor) { %>
+        <div class="site-overlay__flow__trapdoor">
+          <% /* This is terrible magic content, but it's tricky getting markup to flow from the params yml. Go with this for now. */ %>
+          Looking to change careers and become a Web Developer? Check out our <a href="/programs/online-web-developer-career-course/">Career Change Course</a>!
+        </div>
+      <% } %>
+      <div class="site-overlay__flow__cta">
+        <div id="site-overlay__flow__cta__hubspot--program"></div>
+      </div>
+    </div>
+    <% /*
+    <a class="site-overlay__trapdoor util--show-can-run-learn" target="_blank" href="https://learn.co/sign_in/">
+      Already on Learn.co? Sign in here
+    </a>
+    <div class="site-overlay__trapdoor util--hide-can-run-learn">
+      Already on Learn.co? Sign in on your desktop computer to access your courses
+    </div>
+    */ %>
+  </div>
+</script>
+
+<script type="text/template" id="js-template__site-overlay-inner--video">
+  <video class="site-overlay__video" autoplay="true" controls="controls">
+    <source src="https://dotcom-v2.s3.amazonaws.com/video/<%= target %>.mp4" type="video/mp4">
+  </video>
+</script>
+
+<!-- WIP -->
+<script type="text/template" id="js-template__site-overlay-inner--youtube-video">
+  <iframe class="site-overlay__video--youtube" width="1280" height="720" src="https://www.youtube.com/embed/qvbbKFtc0zM?autoplay=1" frameborder="0" allowfullscreen autoplay></iframe>
+</script>
+
+<script type="text/template" id="js-template__site-overlay-inner--hubspot">
+  <div class="site-overlay__wrapper">
+    <% if( obj.headline ) { %>
+      <h2 class="site-overlay__headline"><%= headline %></h2>
+    <% } %>
+    <% if( obj.subhead ) { %>
+      <h3 class="site-overlay__subhead"><%= subhead %></h2>
+    <% } %>
+    <div class="site-overlay__flow">
+      <% if (obj.blurb) { %>
+      <div class="site-overlay__flow__blurb">
+        <p><%= blurb %></p>
+      </div>
+      <% } %>
+      <div class="site-overlay__flow__cta">
+        <div id="site-overlay__flow__cta__hubspot"></div>
+      </div>
+    </div>
+  </div>
+</script>
+
+
+
+<!-- jQuery, Underscore, and Backbone from CDN with local backup -->
+<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+<script>
+    window.jQuery || document.write('<script src="/assets/js/jquery.min.js">\x3C/script>')
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+<script>
+    window.jQuery || document.write('<script src="/assets/js/underscore.min.js">\x3C/script>')
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.3.3/backbone-min.js"></script>
+<script>
+    window.jQuery || document.write('<script src="/assets/js/backbone.min.js">\x3C/script>')
+</script>
+
+<!-- Local vendor and first-party scripts -->
+<script src="/assets/js/global.min.js?v=1.1"></script>
+
+<!-- Hubspot (Wants to be right before </body>) -->
+
+<!-- Start of Async HubSpot Analytics Code -->
+  <script type="text/javascript">
+    (function(d,s,i,r) {
+      if (d.getElementById(i)){return;}
+      var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
+      n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/69751.js';
+      e.parentNode.insertBefore(n, e);
+    })(document,"script","hs-analytics",300000);
+  </script>
+<!-- End of Async HubSpot Analytics Code -->
+
+<!-- Environment-specific scripts -->
+
+
+
+  </body>
+
+</html>
